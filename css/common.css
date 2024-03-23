@@ -1,0 +1,317 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Inter';
+    src: url('path/to/inter-font-file.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variation-settings: 'slnt' 0;
+}
+:root {
+    --color-dg: #1b1b1b;
+    --color-dd: #0b0b0b;
+    background-color: var(--color-dg);
+}
+.wrap {
+    overflow: hidden;
+}
+.mw {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.logo img {
+    padding: 1rem;
+}
+header {
+    width: 100%;
+    background-color: var(--color-dg);
+}
+header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.gnb {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    padding-right: 5rem;
+}
+.gnb li a {
+    color: white;
+}
+
+.login {
+    color: white;
+    background-color: var(--color-dg);
+    border: 1px solid white;
+    border-radius: 0.8rem;
+    width: 4rem;
+    height: 2rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+}
+.sign {
+    color: white;
+    background-color: #fb6514;
+    border: inherit;
+    border-radius: 0.8rem;
+    width: 4rem;
+    height: 2rem;
+    white-space: nowrap;
+}
+.main {
+    background-image: url('/img/main-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-visual {
+    width: 50%;
+    padding: 200px 0;
+}
+.main-visual h2 {
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+}
+.main-visual p {
+    color: white;
+    font-size: 27px;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+.main-visual input {
+    width: 70%;
+    height: 50px;
+    border: inherit;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    margin-right: 2rem;
+}
+.main-visual button {
+    background-color: #fb6514;
+    color: white;
+    border: inherit;
+    height: 50px;
+    width: 20%;
+    border-radius: 2rem;
+    min-width: 100px;
+    white-space: nowrap;
+}
+.main-visual button::after {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    position: relative;
+    left: 10px;
+}
+.sponsored {
+    background-color: var(--color-dd);
+}
+.sponsored-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+.sponsored-inner img {
+    width: 151px;
+}
+.backgournd-dd {
+    background-color: var(--color-dd);
+}
+.category {
+    background-color: var(--color-dg);
+    border-radius: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 15px;
+}
+.category h2 {
+    color: white;
+    font-size: 61px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 5rem 0;
+}
+.category-card-wrap {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.category-card {
+    width: 21.2%;
+    min-width: 280px;
+    height: 380px;
+    background: rgb(135, 20, 251);
+    background: linear-gradient(0deg, rgba(135, 20, 251, 1) 0%, rgba(180, 104, 255, 1) 100%);
+    margin-bottom: 5rem;
+    border-radius: 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 2rem 2.5rem 2rem;
+}
+.category-card h3 {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+}
+.category-card p {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.category-card button {
+    width: 50%;
+    height: 3rem;
+    border: inherit;
+    border-radius: 1rem;
+    color: #b468ff;
+    white-space: nowrap;
+}
+.category-card i {
+    position: absolute;
+    top: 3rem;
+}
+.progress {
+    background-color: var(--color-dg);
+    margin: 1rem;
+    border-radius: 5rem;
+    background-image: url(/img/background-img.svg);
+    background-repeat: no-repeat;
+    background-position: right 15%;
+    background-size: cover;
+}
+.progress-inner {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 8rem 0;
+    flex-wrap: wrap;
+}
+.progress-inner h2 {
+    font-size: 47px;
+    font-weight: bold;
+}
+.progress-inner p {
+    font-size: 27px;
+}
+.plans {
+    background-color: var(--color-dg);
+    border-radius: 5rem;
+    margin: 1rem;
+}
+
+.plans h2 {
+    color: white;
+    font-size: 61px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 5rem 0;
+}
+.plan-card-wrap {
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.plan-card {
+    border: 1px solid white;
+    width: 400px;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    margin-bottom: 5rem;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 80%), url('/img/plan1.jpg');
+    background-size: 100%, 100% 40%;
+    background-repeat: no-repeat;
+}
+.plan-card.orange {
+    background-image: linear-gradient(0deg, rgba(251, 101, 20, 1) 60%, rgba(0, 0, 0, 0) 80%), url('/img/plan1.jpg');
+}
+.plan-card h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    top: -50px;
+    margin-top: 200px;
+}
+.plan-card p span {
+    font-size: 1.5rem;
+}
+.plan-card p strong {
+    font-size: 3rem;
+}
+.plan-card .price {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.plan-card-text-wrap {
+    margin: auto;
+}
+.plan-card-text-wrap p {
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+}
+.plan-card-text-wrap li {
+    padding: 1.5rem 0;
+    border-top: 1px solid white;
+}
+.plan-card-text-wrap .checked::before {
+    content: '\f14a';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    color: #fd853a;
+}
+.plan-card-text-wrap .checked.white::before {
+    content: '\f14a';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    color: white;
+}
+.plan-card-text-wrap .unChecked::before {
+    content: '\f2d3';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+.plan-card button {
+    font-size: 1.5rem;
+    border: 1.5px solid white;
+    background-color: inherit;
+    border-radius: 1.5rem;
+    margin: 0 14%;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    color: white;
+    cursor: pointer;
+}
+.plan-card button::after {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    position: relative;
+    left: 1rem;
+}
