@@ -125,6 +125,8 @@ header nav {
 }
 .backgournd-dd {
     background-color: var(--color-dd);
+    padding-bottom: 1rem;
+    border-radius: 0 0 5rem 5rem;
 }
 .category {
     background-color: var(--color-dg);
@@ -229,7 +231,6 @@ header nav {
     justify-content: center;
 }
 .plan-card {
-    border: 1px solid white;
     width: 400px;
     border-radius: 5rem;
     display: flex;
@@ -314,4 +315,104 @@ header nav {
     font-weight: 600;
     position: relative;
     left: 1rem;
+}
+.step {
+    color: white;
+    margin-top: 5rem;
+}
+.step h2 {
+    text-align: center;
+    font-size: 61px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.step-card {
+    background-color: var(--color-dg);
+    margin: 1rem;
+    border-radius: 5rem;
+}
+.step-card-inner {
+    display: flex;
+    padding: 0 2rem;
+    align-items: center;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+
+.step .step-img{
+    order: -1;
+    border-radius: 5rem;
+    width: 40%;
+    margin: 5rem 0;
+}
+.step-text-wrap {
+    width: 50%;
+}
+.step-text-wrap h3 {
+    font-size: 61px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    line-height: 4.5rem;
+}
+.step-text-wrap div {
+    display: inline-block;
+    line-height: 2rem;
+}
+.step-text-wrap strong {
+    font-size: 61px;
+    font-weight: bold;
+}
+.step-text-wrap strong::before {
+    content: '\f013';
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Font Awesome 5 Free';
+    color: #273b4a;
+    position: relative;
+    bottom: 1rem;
+    padding-right: 0.5rem;
+}
+.step-text-wrap strong::after {
+    content: '+';
+    font-weight: bold;
+    color: #fd853a;
+}
+.step-text-wrap p {
+    font-size: 27px;
+    padding-bottom: 2rem;
+    line-height: 2.5rem;
+    padding-bottom: 3rem;
+}
+.step-text-wrap button {
+    font-size: 26px;
+    background-color: #fb6514;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    display: block;
+    cursor: pointer;
+}
+.step-text-wrap h4 {
+    font-size: 27px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.work li {
+    display: flex;
+    flex-direction: row;
+}
+.step-text-inner-wrap{
+    display: flex;
+
+}
+.work img {
+    margin: 0 2rem 1rem 0;
+    order: -1;
+}
+.step .step-right-img {
+    order: 2;
+    border-radius: 5rem;
+    width: 40%;
+    margin: 5rem 0;
 }
