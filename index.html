@@ -6,14 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gym Clone</title>
         <link rel="stylesheet" href="./css/my_reset.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <script src="https://kit.fontawesome.com/85f3270ce0.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/css/common.css" />
-        <link rel="stylesheet" href="./js/common.js" />
+        <script src="./js/common.js" defer></script>
     </head>
     <body>
         <div class="wrap">
             <header>
-                <nav class="mw">
+                <nav class="head-inner mw">
                     <h1 class="logo">
                         <a href=""><img src="./img/logo.svg" alt="logo" /></a>
                     </h1>
@@ -23,14 +24,14 @@
                         <li><a href="">Contact</a></li>
                         <li><a href="">About</a></li>
                     </ul>
-
                     <button class="login">Log in</button>
                     <button class="sign">Sign up</button>
+                    <i class="fa-solid fa-bars ham"></i>
                 </nav>
             </header>
             <main>
                 <section class="main">
-                    <div class="mw">
+                    <div class="main-inner mw">
                         <div class="main-visual">
                             <h2>
                                 Shape Your Body<br />
@@ -316,45 +317,75 @@
                     </section>
                 </div>
                 <section class="map">
-                    <h2>Map Location Us</h2>
-                    <!-- 구글 지도 가져오는 곳 iframe -->
+                    <div class="mw">
+                        <h2>Map Location Us</h2>
+                        <!-- 구글 지도 가져오는 곳 iframe -->
+                        <iframe
+                            width="100%"
+                            height="900"
+                            frameborder="0"
+                            scrolling="no"
+                            marginheight="0"
+                            marginwidth="0"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%9A%A9%EC%9D%B8%EC%8B%9C%20%EA%B8%B0%ED%9D%A5%EA%B5%AC%20%EB%A7%88%EB%B6%81%EB%8F%99+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                            ><a href="https://www.gps.ie/">gps systems</a></iframe
+                        >
+                    </div>
                 </section>
                 <section class="faq">
-                    <div>
-                        <h2>faq</h2>
-                        <ul>
-                            <li>
+                    <div class="mw">
+                        <h2>FAQ</h2>
+                        <ul class="faq-list-wrap">
+                            <li class="faq-list">
                                 <p>
-                                    Do you need to follow Maxfit ?<span><i class="faq-toggle"></i></span>
+                                    Do you need to follow Maxfit ?<span class="faq-toggle"
+                                        ><i class="fa-solid fa-chevron-down"></i
+                                    ></span>
                                 </p>
                                 <div>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum has been the industry's standard dummy text ever since the 1500s.
                                 </div>
                             </li>
-                            <li>
-                                <p>Do you need to follow Maxfit ? <i class="faq-toggle"></i></p>
+                            <li class="faq-list">
+                                <p>
+                                    Do you need to follow Maxfit ?<span class="faq-toggle"
+                                        ><i class="fa-solid fa-chevron-down"></i
+                                    ></span>
+                                </p>
                                 <div>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum has been the industry's standard dummy text ever since the 1500s.
                                 </div>
                             </li>
-                            <li>
-                                <p>Do you need to follow Maxfit ? <i class="faq-toggle"></i></p>
+                            <li class="faq-list">
+                                <p>
+                                    Do you need to follow Maxfit ?<span class="faq-toggle"
+                                        ><i class="fa-solid fa-chevron-down"></i
+                                    ></span>
+                                </p>
                                 <div>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum has been the industry's standard dummy text ever since the 1500s.
                                 </div>
                             </li>
-                            <li>
-                                <p>Do you need to follow Maxfit ? <i class="faq-toggle"></i></p>
+                            <li class="faq-list">
+                                <p>
+                                    Do you need to follow Maxfit ?<span class="faq-toggle"
+                                        ><i class="fa-solid fa-chevron-down"></i
+                                    ></span>
+                                </p>
                                 <div>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum has been the industry's standard dummy text ever since the 1500s.
                                 </div>
                             </li>
-                            <li>
-                                <p>Do you need to follow Maxfit ? <i class="faq-toggle"></i></p>
+                            <li class="faq-list">
+                                <p>
+                                    Do you need to follow Maxfit ?<span class="faq-toggle"
+                                        ><i class="fa-solid fa-chevron-down"></i
+                                    ></span>
+                                </p>
                                 <div>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum has been the industry's standard dummy text ever since the 1500s.
@@ -365,58 +396,119 @@
                 </section>
                 <!-- 슬라이드 예정 swiper-->
                 <section class="news">
-                    <div class="mw2">
+                    <div>
                         <h2>Fitness News</h2>
-                        <ul>
-                            <li>
-                                <h3>Place Your Text</h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's
-                                </p>
-                                <!-- 가상요소 활용 or 배경이미지 -->
-                                <!-- <img src="" alt="" /> -->
-                            </li>
-                            <li>
-                                <img src="" alt="" />
-                                <h3>Place Your Text</h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's
-                                </p>
-                            </li>
-                            <li>
-                                <img src="" alt="" />
-                                <h3>Place Your Text</h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's
-                                </p>
-                            </li>
-                        </ul>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div>
+                                        <h3>Place Your Text</h3>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's
+                                        </p>
+                                        <!-- 가상요소 활용 or 배경이미지 -->
+                                        <!-- <img src="" alt="" /> -->
+                                    </div>
+                                    <div>
+                                        <h3>Place Your Text</h3>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3>Place Your Text</h3>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <h3>Place Your Text</h3>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's
+                                        </p>
+                                        <!-- 가상요소 활용 or 배경이미지 -->
+                                        <!-- <img src="" alt="" /> -->
+                                    </div>
+                                    <div>
+                                        <h3>Place Your Text</h3>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3>Place Your Text</h3>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <h3>Place Your Text</h3>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's
+                                        </p>
+                                        <!-- 가상요소 활용 or 배경이미지 -->
+                                        <!-- <img src="" alt="" /> -->
+                                    </div>
+                                    <div>
+                                        <h3>Place Your Text</h3>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3>Place Your Text</h3>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination pg1"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
                     </div>
                 </section>
-
                 <section class="profesional">
-                    <div class="mw1">
-                        <h2>Place Your Text Here Profesional Tex Here</h2>
-                        <span
-                            >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s.</span
-                        >
-                        <button>Get Start</button>
+                    <div class="profesional-inner">
+                        <h2>
+                            Place Your Text Here <br />
+                            Profesional Tex Here
+                        </h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />
+                            Lorem Ipsum has been the industry's standard dummy text ever since the <br />
+                            1500s.
+                        </p>
+                        <button>Get Started</button>
                     </div>
                 </section>
             </main>
             <footer>
-                <div class="mw1">
+                <div class="footer-inner">
                     <h2 class="footer-logo">
-                        <img src="" alt="" />
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <img src="./img/logoText.svg" alt="" />
+                        <p>
+                            Lorem Ipsum is simply dummy text of the <br />
+                            printing and typesetting industry.
+                        </p>
                     </h2>
-                    <ul>
+                    <ul class="fnb">
                         <li>
-                            <a href="">Get started</a>
+                            Get started
                             <ul>
                                 <li><a href="">Service</a></li>
                                 <li><a href="">Contact Us</a></li>
@@ -425,27 +517,28 @@
                             </ul>
                         </li>
                         <li>
-                            <span>Get Started</span>
+                            Get Started
                             <ul>
-                                <li>Fitness</li>
-                                <li>Platform</li>
-                                <li>Workout Libary</li>
-                                <li>App Design</li>
+                                <li><a href="">Fitness</a></li>
+                                <li><a href="">Platform</a></li>
+                                <li><a href="">Workout Libary</a></li>
+                                <li><a href="">App Design</a></li>
                             </ul>
                         </li>
                         <li>
-                            <span>Get Started</span>
+                            Get Started
                             <ul>
-                                <li>About us</li>
+                                <li><a href="">About us</a></li>
                             </ul>
                         </li>
                     </ul>
-                    <div>
-                        <span>2024 Clone</span>
-                        <span>Twitter - Instagram - Facebook</span>
+                    <div class="copyright">
+                        <p>2024 Clone</p>
+                        <p>Twitter - Instagram - Facebook</p>
                     </div>
                 </div>
             </footer>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </body>
 </html>
