@@ -404,6 +404,7 @@ header .ham {
     border-radius: 1rem;
     display: block;
     cursor: pointer;
+    margin-bottom: 1rem;
 }
 .step-text-wrap h4 {
     font-size: 27px;
@@ -755,7 +756,7 @@ footer {
         font-size: 21px;
     }
     .plan-card.orange {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 80%), url('./img/plan1.jpg');
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 80%), url('../img/plan1.jpg');
     }
     .step .step-img {
         width: 100%;
@@ -891,5 +892,8 @@ footer {
     }
     .faq-list p {
         font-size: 16px;
+    }
+    .plan-card button {
+        margin: auto;
     }
 }
