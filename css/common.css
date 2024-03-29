@@ -642,13 +642,13 @@ footer {
         max-height: 70px;
     }
     header .gnb {
-        transform: translateX(100%);
+        transform: translateX(200%);
         transition: 0.5s;
-        opacity: 0;
-        visibility: hidden;
+        position: absolute;
         flex-direction: column;
         justify-content: center;
         height: 100vh;
+        z-index: -100;
     }
     header button {
         display: none;
@@ -664,12 +664,10 @@ footer {
     }
     header .gnb.on {
         visibility: visible;
-        opacity: 1;
         position: fixed;
         background-color: black;
         height: 100vh;
         top: 0;
-        
         z-index: 1000;
         transform: translateX(0);
     }
