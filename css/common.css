@@ -71,7 +71,7 @@ header .ham {
     white-space: nowrap;
 }
 .main {
-    background-image: url('/img/main-image.png');
+    background-image: url('./img/main-image.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -200,7 +200,7 @@ header .ham {
     background-color: var(--color-dg);
     margin: 1rem;
     border-radius: 5rem;
-    background-image: url(/img/background-img.svg);
+    background-image: url('./img/background-img.svg');
     background-repeat: no-repeat;
     background-position: right 15%;
     background-size: cover;
@@ -249,12 +249,12 @@ header .ham {
     color: white;
     position: relative;
     margin-bottom: 5rem;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 80%), url('/img/plan1.jpg');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 80%), url('./img/plan1.jpg');
     background-size: 100%, 100% 40%;
     background-repeat: no-repeat;
 }
 .plan-card.orange {
-    background-image: linear-gradient(0deg, rgba(251, 101, 20, 1) 60%, rgba(0, 0, 0, 0) 80%), url('/img/plan1.jpg');
+    background-image: linear-gradient(0deg, rgba(251, 101, 20, 1) 60%, rgba(0, 0, 0, 0) 80%), url('./img/plan1.jpg');
 }
 .plan-card h3 {
     font-size: 2rem;
@@ -555,7 +555,7 @@ header .ham {
 }
 
 .profesional {
-    background-image: url(../img/background-img.svg);
+    background-image: url('./img/background-img.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -755,7 +755,7 @@ footer {
         font-size: 21px;
     }
     .plan-card.orange {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 80%), url(/img/plan1.jpg);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 80%), url('./img/plan1.jpg');
     }
     .step .step-img {
         width: 100%;
