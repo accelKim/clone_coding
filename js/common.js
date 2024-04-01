@@ -1,10 +1,8 @@
-const faqToggles = document.querySelectorAll('.faq-toggle');
+const faqLists = document.querySelectorAll('.faq-list');
 
-faqToggles.forEach((toggle) => {
-    toggle.addEventListener('click', () => {
-        const faqListItem = toggle.closest('.faq-list');
-
-        faqListItem.classList.toggle('on');
+faqLists.forEach((e) => {
+    e.addEventListener('click', function () {
+        this.classList.toggle('on');
     });
 });
 
@@ -13,7 +11,6 @@ const ham = document.querySelector('.ham');
 ham.addEventListener('click', (e) => {
     gnb.classList.toggle('on');
 });
-
 
 var swiper = new Swiper('.mySwiper', {
     spaceBetween: 30,
